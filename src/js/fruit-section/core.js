@@ -23,10 +23,6 @@ const gameStep = () => {
 	gameCycle(gameStep)
 };
 
-const setGame = callback => {
-	gameEngine = callback;
-};
 
 
-
-export {gameCycle, gameStart, gameStep, setGame}
+export {gameCycle, gameStart, gameStep}
