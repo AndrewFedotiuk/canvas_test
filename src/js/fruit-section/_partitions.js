@@ -4,4 +4,9 @@ function randomGenerator(min, max) {
 	return rand;
 }
 
-export {randomGenerator}
+const withAndHeight = {
+	width : 600,
+	height : 400
+};
+
+export {randomGenerator, withAndHeight}
