@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="502d0363-e148-4fa7-820b-cec493db55f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/fruits-section/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/fruit-section/_partitions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/_partitions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/fruit-section/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/fruit-section/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="502d0363-e148-4fa7-820b-cec493db55f9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -53,7 +45,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="85" />
-          <entry key="js" value="5400" />
+          <entry key="js" value="5402" />
           <entry key="json" value="1" />
           <entry key="scss" value="65" />
         </counts>
@@ -62,7 +54,7 @@
         <counts>
           <entry key="HTML" value="85" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="5400" />
+          <entry key="JavaScript" value="5402" />
           <entry key="SCSS" value="65" />
         </counts>
       </usages-collector>
@@ -85,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+            <state relative-caret-position="40">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -299,12 +291,12 @@
       <workItem from="1548503291604" duration="26140000" />
       <workItem from="1548535850708" duration="421000" />
       <workItem from="1548577372814" duration="10474000" />
-      <workItem from="1548590216657" duration="17376000" />
+      <workItem from="1548590216657" duration="17677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60928000" />
+    <option name="totallyTimeSpent" value="61229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -465,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        <state relative-caret-position="40">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
