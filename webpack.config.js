@@ -86,8 +86,9 @@ const config = {
 			{
 				test: /\.html$/,
 				include: path.resolve(__dirname, "src/html/includes"),
-				use: ["raw-loader"]
-			}
+				use: ["raw-loader"],
+			},
+			{ test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
 		]
 	},
 	plugins: [
