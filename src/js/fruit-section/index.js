@@ -1,9 +1,15 @@
-import {gameStart} from './core';
-import {randomGenerator, withAndHeight} from './_partitions';
-import {images, GameItem} from './imagesCreator';
+import { gameStart } from './core';
+import { randomGenerator, withAndHeight, fruitsOptions } from './_partitions';
+import { images, createItems } from './imagesCreator';
+
+import background from "../../img/fruits-section/background.jpg";
 
 const canvas = document.getElementById('fruitsWindow');
 const context = canvas.getContext('2d');
+
+const bg = new Image();
+bg.src = background;
+
 
 let score = 0,
 	deg = 0;
@@ -16,12 +22,15 @@ gameStart(draw);
 function draw() {
 	context.clearRect(0, 0, withAndHeight.width, withAndHeight.height);
 
+	context.drawImage(bg, 0, 0, withAndHeight.width, withAndHeight.height);
+
 	context.font="30px Comic Sans MS";
 	context.fillStyle = "red";
 	context.fillText(`Score: ${score}`, 10, 40);
 
-	// createItems();
-
+	if (randomGenerator(0, 100) === 1 && images.length <= 8) {
+		images.push(createItems(fruitsOptions));
+	}
 
 	images.forEach((fruit) => {
 		if(!fruit.loaded){
@@ -29,12 +38,13 @@ function draw() {
 		}
 
 		deg += 1;
+		context.save();
 
 		const dx = fruit.x + fruit.width / 2;
 		const dy = fruit.y + fruit.height / 2;
 
-
 		fruit.rotate(deg, dx, dy, context);
+
 		fruit.moveUp();
 
 		context.drawImage(fruit.image, fruit.x, fruit.y, fruit.width, fruit.height);
@@ -53,7 +63,7 @@ canvas.onclick = (event) => {
 	images.forEach((fruit) => {
 		if(getCursorPosition(x, y, fruit)){
 
-			const currentItem = fruit.die();
+			const currentItem = fruit.getCurrentIndex();
 
 			updateScore(fruit);
 
@@ -68,7 +78,7 @@ function getCursorPosition(positionX, positionY, fruit){
 }
 
 function updateScore(item) {
-	if(item.score !== 'boom!!!'){
+	if(item.score !== 0){
 		score += item.score;
 
 	}else {
@@ -76,7 +86,3 @@ function updateScore(item) {
 		location.reload();
 	}
 }
-
-
-
-

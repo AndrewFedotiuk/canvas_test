@@ -1,22 +1,22 @@
-import appleImage from "../../img/fruits-section/apple.png";
-import bananaImage from "../../img/fruits-section/banana.png";
-import boomImage from "../../img/fruits-section/boom.png";
-import { randomGenerator, withAndHeight } from "./_partitions";
+import { randomGenerator, withAndHeight, fruitsOptions } from "./_partitions";
 
+const gravity = 1;
 
 class GameItem {
-	constructor(image, score, w = 33, h = 33) {
+	constructor(image, score, w, h) {
 		this.image = new Image();
 		this.imageScr = image;
 		this.width = w;
 		this.height = h;
 		this.score = score;
-		this.speed = randomGenerator(1, 5);
+		this.speed = GameItem.setDefaultSpeed();
 		this.x = randomGenerator(0, withAndHeight.width - 100);
 		this.y = withAndHeight.height;
 		this.loaded = false;
 		this.onPick = false;
 		this.rotateKey = randomGenerator(1, 2);
+		this.moveRight = this.getPath();
+		this.accelerationRate = randomGenerator(28, 45) / 1000;
 	}
 
 	writeSrc() {
@@ -29,13 +29,24 @@ class GameItem {
 		};
 	}
 
+	getPath(){
+		return this.x <= withAndHeight.width / 2;
+	}
+
 	moveUp(){
 		if(this.onPick){
 			this.moveDown();
-		}else if(this.y <= 50){
+
+		}else if(this.speed < 0.1){
 			this.onPick = true;
+
 		}else {
-			this.y -= this.speed;
+			if(this.moveRight){
+				this.x += gravity;
+			}else {
+				this.x -= gravity;
+			}
+			this.y -= (this.speed -= this.accelerationRate);
 		}
 	}
 
@@ -43,10 +54,15 @@ class GameItem {
 		if(this.y >= withAndHeight.height){
 			this.onPick = false;
 			this.x = randomGenerator(0, withAndHeight.width);
-			this.speed = randomGenerator(1, 5);
-		}else {
-			this.y += this.speed;
+			this.moveRight = this.getPath();
+			this.speed = GameItem.setDefaultSpeed();
 		}
+			if(this.moveRight){
+				this.x += gravity;
+			}else {
+				this.x -= gravity;
+			}
+			this.y += (this.speed += this.accelerationRate);
 	}
 
 	rotate(deg, dx, dy, context){
@@ -54,54 +70,38 @@ class GameItem {
 
 		if(this.rotateKey === 2) deg = -deg;
 
-		context.save();
 		context.translate(dx, dy);
 		context.rotate(deg);
 		context.translate(-dx, -dy);
-
 	}
 
-	die(){
+	getCurrentIndex(){
 		return images.indexOf(this);
+	}
+
+	static setDefaultSpeed(){
+		return randomGenerator(38, 47) / 10;
 	}
 }
 
-const apple = new GameItem(appleImage, 100);
-const banana = new GameItem(bananaImage, 200, 63, 25);
-const boom = new GameItem(boomImage, 'boom!!!', 33, 34);
+const images = fruitsOptions.map(item => createFruit(item));
 
-const images = [
-	apple,
-	banana,
-	boom
-];
+function createFruit(item) {
+	const fruit = new GameItem(...item);
 
-images.forEach((item) => {
-	item.writeSrc();
-	item.loadImage();
-});
+	fruit.writeSrc();
+	fruit.loadImage();
 
-// function createItems(counter = randomGenerator(0, 100)){
-// 	switch (counter) {
-// 		case 0:
-// 			const newApple = new GameItem(appleImage, 100);
-// 			newApple.loaded = true;
-// 			images.push(newApple);
-// 			break;
-// 		case 1:
-// 			const newBanana = new GameItem(bananaImage, 100);
-// 			newBanana.loaded = true;
-// 			images.push(newBanana);
-// 			break;
-//      case 2:
-// 			const newBoom = new GameItem(newBoom, 'boom');
-// 			newBoom.loaded = true;
-// 			images.push(newBoom);
-// 			break;
-// 	}
-// }
+	return fruit;
+}
 
-export {images, GameItem};
+function createItems(fruitsOptions){
+	const key = randomGenerator(0, fruitsOptions.length - 1);
+
+	return createFruit(fruitsOptions[key]);
+}
+
+export {images, GameItem, createItems};
 
 
 
