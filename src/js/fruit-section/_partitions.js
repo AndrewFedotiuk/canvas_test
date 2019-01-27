@@ -1,9 +1,9 @@
-import appleImage from "../../img/fruits-section/apple.png";
-import bananaImage from "../../img/fruits-section/banana.png";
-import boomImage from "../../img/fruits-section/boom.png";
-import basahaImage from "../../img/fruits-section/basaha.png";
-import peachImage from "../../img/fruits-section/peach.png";
-import sandiaImage from "../../img/fruits-section/sandia.png";
+import appleImage from '../../img/fruits-section/apple.png';
+import bananaImage from '../../img/fruits-section/banana.png';
+import boomImage from '../../img/fruits-section/boom.png';
+import basahaImage from '../../img/fruits-section/basaha.png';
+import peachImage from '../../img/fruits-section/peach.png';
+import sandiaImage from '../../img/fruits-section/sandia.png';
 
 function randomGenerator(min, max) {
 	let rand = min + Math.random() * (max + 1 - min);
@@ -20,9 +20,9 @@ const fruitsOptions = [
 	[sandiaImage, 50, 98, 85],
 ];
 
-const withAndHeight = {
+const canvasParams = {
 	width : 600,
 	height : 400
 };
 
-export {randomGenerator, withAndHeight, fruitsOptions}
+export {randomGenerator, canvasParams, fruitsOptions}

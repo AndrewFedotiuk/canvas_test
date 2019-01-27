@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="502d0363-e148-4fa7-820b-cec493db55f9" name="Default Changelist" comment="" />
+    <list default="true" id="502d0363-e148-4fa7-820b-cec493db55f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/js/fruit-section/_partitions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/_partitions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/fruit-section/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/index.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -45,7 +49,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="85" />
-          <entry key="js" value="5402" />
+          <entry key="js" value="5417" />
           <entry key="json" value="1" />
           <entry key="scss" value="65" />
         </counts>
@@ -54,7 +58,7 @@
         <counts>
           <entry key="HTML" value="85" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="5402" />
+          <entry key="JavaScript" value="5417" />
           <entry key="SCSS" value="65" />
         </counts>
       </usages-collector>
@@ -65,20 +69,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/fruit-section/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1580">
-              <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="80">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="-1260">
+              <caret column="62" selection-start-column="62" selection-end-column="62" />
+              <caret column="76" selection-start-column="76" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -92,26 +95,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/fruit-section/_partitions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="-8">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/img/fruits-section/sandia.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/img/fruits-section/peach.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -150,8 +143,10 @@
       <find>7</find>
       <find>8</find>
       <find>console.log</find>
-      <find>console</find>
       <find>gravity</find>
+      <find>withAndHeight</find>
+      <find>console</find>
+      <find>&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,10 +162,10 @@
         <option value="$PROJECT_DIR$/src/html/includes/fruits-section.html" />
         <option value="$PROJECT_DIR$/src/scss/fruits.scss" />
         <option value="$PROJECT_DIR$/src/html/views/index.html" />
-        <option value="$PROJECT_DIR$/src/js/fruit-section/_partitions.js" />
         <option value="$PROJECT_DIR$/src/js/fruit-section/core.js" />
         <option value="$PROJECT_DIR$/src/js/fruit-section/index.js" />
         <option value="$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js" />
+        <option value="$PROJECT_DIR$/src/js/fruit-section/_partitions.js" />
       </list>
     </option>
   </component>
@@ -291,12 +286,12 @@
       <workItem from="1548503291604" duration="26140000" />
       <workItem from="1548535850708" duration="421000" />
       <workItem from="1548577372814" duration="10474000" />
-      <workItem from="1548590216657" duration="17677000" />
+      <workItem from="1548590216657" duration="18233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61229000" />
+    <option name="totallyTimeSpent" value="61785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,6 +423,22 @@
     <entry file="file://$PROJECT_DIR$/src/img/fruits-section/sandia.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/fruit-section/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret column="62" selection-start-column="62" selection-end-column="62" />
+          <caret column="76" selection-start-column="76" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/fruit-section/core.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -437,28 +448,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/fruit-section/_partitions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="-8">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
             <element signature="e#0#60#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/fruit-section/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1580">
-          <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>

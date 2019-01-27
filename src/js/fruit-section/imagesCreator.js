@@ -1,4 +1,4 @@
-import { randomGenerator, withAndHeight, fruitsOptions } from "./_partitions";
+import { randomGenerator, canvasParams, fruitsOptions } from './_partitions';
 
 const gravity = 1;
 
@@ -10,8 +10,8 @@ class GameItem {
 		this.height = h;
 		this.score = score;
 		this.speed = GameItem.setDefaultSpeed();
-		this.x = randomGenerator(0, withAndHeight.width - 100);
-		this.y = withAndHeight.height;
+		this.x = randomGenerator(0, canvasParams.width - 100);
+		this.y = canvasParams.height;
 		this.loaded = false;
 		this.onPick = false;
 		this.rotateKey = randomGenerator(1, 2);
@@ -30,7 +30,7 @@ class GameItem {
 	}
 
 	getPath(){
-		return this.x <= withAndHeight.width / 2;
+		return this.x <= canvasParams.width / 2;
 	}
 
 	moveUp(){
@@ -51,9 +51,9 @@ class GameItem {
 	}
 
 	moveDown(){
-		if(this.y >= withAndHeight.height){
+		if(this.y >= canvasParams.height){
 			this.onPick = false;
-			this.x = randomGenerator(0, withAndHeight.width);
+			this.x = randomGenerator(0, canvasParams.width);
 			this.moveRight = this.getPath();
 			this.speed = GameItem.setDefaultSpeed();
 		}

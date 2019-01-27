@@ -1,8 +1,8 @@
 import { gameStart } from './core';
-import { randomGenerator, withAndHeight, fruitsOptions } from './_partitions';
+import { randomGenerator, canvasParams, fruitsOptions } from './_partitions';
 import { images, createItems } from './imagesCreator';
 
-import background from "../../img/fruits-section/background.jpg";
+import background from '../../img/fruits-section/background.jpg';
 
 const canvas = document.getElementById('fruitsWindow');
 const context = canvas.getContext('2d');
@@ -14,18 +14,18 @@ bg.src = background;
 let score = 0,
 	deg = 0;
 
-canvas.width = withAndHeight.width;
-canvas.height = withAndHeight.height;
+canvas.width = canvasParams.width;
+canvas.height = canvasParams.height;
 
 gameStart(draw);
 
 function draw() {
-	context.clearRect(0, 0, withAndHeight.width, withAndHeight.height);
+	context.clearRect(0, 0, canvasParams.width, canvasParams.height);
 
-	context.drawImage(bg, 0, 0, withAndHeight.width, withAndHeight.height);
+	context.drawImage(bg, 0, 0, canvasParams.width, canvasParams.height);
 
-	context.font="30px Comic Sans MS";
-	context.fillStyle = "red";
+	context.font='30px Comic Sans MS';
+	context.fillStyle = 'red';
 	context.fillText(`Score: ${score}`, 10, 40);
 
 	if (randomGenerator(0, 100) === 1 && images.length <= 8) {
@@ -55,7 +55,7 @@ function draw() {
 }
 
 canvas.onclick = (event) => {
-	const dx = (window.innerWidth - withAndHeight.width) / 2;
+	const dx = (window.innerWidth - canvasParams.width) / 2;
 
 	const x = (event.pageX - dx),
 	y = (event.pageY - 10);
