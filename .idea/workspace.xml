@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="502d0363-e148-4fa7-820b-cec493db55f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/includes/fruits-section.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/includes/fruits-section.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/fruit-section/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/core.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/fruit-section/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fruit-section/index.js" afterDir="false" />
@@ -24,7 +23,8 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.34" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -32,14 +32,14 @@
           <entry key="html" value="3" />
           <entry key="js" value="10" />
           <entry key="json" value="2" />
-          <entry key="png" value="4" />
+          <entry key="png" value="5" />
           <entry key="scss" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="3" />
-          <entry key="Image" value="4" />
+          <entry key="Image" value="5" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="10" />
           <entry key="SCSS" value="4" />
@@ -48,7 +48,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="85" />
-          <entry key="js" value="3160" />
+          <entry key="js" value="4085" />
           <entry key="json" value="1" />
           <entry key="scss" value="65" />
         </counts>
@@ -57,21 +57,21 @@
         <counts>
           <entry key="HTML" value="85" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="3160" />
+          <entry key="JavaScript" value="4085" />
           <entry key="SCSS" value="65" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57475317">
+    <splitter split-orientation="horizontal" split-proportion="0.5084626">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/js/fruit-section/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="121">
-                  <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+                <state relative-caret-position="395">
+                  <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#33#0" expanded="true" />
                   </folding>
@@ -82,8 +82,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+                <state relative-caret-position="120">
+                  <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#60#0" expanded="true" />
                   </folding>
@@ -94,8 +94,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/js/fruit-section/core.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="27" column="17" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="17" />
+                <state relative-caret-position="460">
+                  <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -112,12 +112,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="30" column="22" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="22" />
+                <state relative-caret-position="180">
+                  <caret line="63" column="10" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#60#0" expanded="true" />
                   </folding>
@@ -145,9 +145,10 @@
       <find>random</find>
       <find>drawRect</find>
       <find>randomGenerator</find>
-      <find>imageLoad</find>
-      <find>heig</find>
       <find>draw</find>
+      <find>heig</find>
+      <find>console</find>
+      <find>imageLoad</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,8 +163,8 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/html/includes/fruits-section.html" />
         <option value="$PROJECT_DIR$/src/js/fruit-section/_partitions.js" />
-        <option value="$PROJECT_DIR$/src/js/fruit-section/core.js" />
         <option value="$PROJECT_DIR$/src/scss/fruits.scss" />
+        <option value="$PROJECT_DIR$/src/js/fruit-section/core.js" />
         <option value="$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js" />
         <option value="$PROJECT_DIR$/src/js/fruit-section/index.js" />
       </list>
@@ -323,11 +324,13 @@
       <updated>1548444857158</updated>
       <workItem from="1548444859895" duration="558000" />
       <workItem from="1548503291604" duration="26140000" />
+      <workItem from="1548535850708" duration="421000" />
+      <workItem from="1548577372814" duration="1630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27306000" />
+    <option name="totallyTimeSpent" value="34708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,11 +347,11 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.31100142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="npm" order="2" side_tool="true" weight="0.3293371" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29902643" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10570236" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -411,20 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/fruit-section/_partitions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/fruit-section/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/img/fruits-section/apple.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -438,10 +427,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/fruits-section/boom.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/fruit-section/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/fruit-section/_partitions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/fruit-section/imagesCreator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="120">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
             <element signature="e#0#60#0" expanded="true" />
           </folding>
@@ -450,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/fruit-section/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="395">
+          <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>

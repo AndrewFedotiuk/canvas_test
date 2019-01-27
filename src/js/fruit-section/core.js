@@ -1,7 +1,6 @@
 const FPS = 1000 / 60;
 let gameEngine;
 
-
 const gameCycle = (()=>{
 	return requestAnimationFrame ||
 	webkitRequestAnimationFrame  ||
@@ -13,6 +12,8 @@ const gameCycle = (()=>{
 	}
 })();
 
+const cancelAnimationFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame;
+
 const gameStart = callback => {
 	gameEngine = callback;
 	gameStep();
@@ -20,9 +21,9 @@ const gameStart = callback => {
 
 const gameStep = () => {
 	gameEngine();
-	gameCycle(gameStep)
+	gameCycle(gameStep);
 };
 
 
 
-export {gameCycle, gameStart, gameStep}
+export {gameStart}

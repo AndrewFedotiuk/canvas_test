@@ -1,11 +1,12 @@
 import {gameStart} from './core';
 import {randomGenerator, withAndHeight} from './_partitions';
-import {images, GameItem} from './imagesCreator'
-import appleImage from "../../img/fruits-section/apple.png";
-import bananaImage from "../../img/fruits-section/banana.png";
+import {images, GameItem} from './imagesCreator';
 
 const canvas = document.getElementById('fruitsWindow');
 const context = canvas.getContext('2d');
+
+let score = 0,
+	deg = 0;
 
 canvas.width = withAndHeight.width;
 canvas.height = withAndHeight.height;
@@ -15,15 +16,31 @@ gameStart(draw);
 function draw() {
 	context.clearRect(0, 0, withAndHeight.width, withAndHeight.height);
 
-	createItems();
+	context.font="30px Comic Sans MS";
+	context.fillStyle = "red";
+	context.fillText(`Score: ${score}`, 10, 40);
+
+	// createItems();
+
 
 	images.forEach((fruit) => {
 		if(!fruit.loaded){
 			return;
 		}
+
+		deg += 1;
+
+		const dx = fruit.x + fruit.width / 2;
+		const dy = fruit.y + fruit.height / 2;
+
+
+		fruit.rotate(deg, dx, dy, context);
 		fruit.moveUp();
 
 		context.drawImage(fruit.image, fruit.x, fruit.y, fruit.width, fruit.height);
+
+		context.restore();
+
 	});
 }
 
@@ -34,33 +51,32 @@ canvas.onclick = (event) => {
 	y = (event.pageY - 10);
 
 	images.forEach((fruit) => {
-		if(cursorIsRect(x, y, fruit)){
+		if(getCursorPosition(x, y, fruit)){
+
 			const currentItem = fruit.die();
+
+			updateScore(fruit);
 
 			images.splice(currentItem, 1);
 		}
 	})
 };
 
-function cursorIsRect(positionX, positionY, fruit){
+function getCursorPosition(positionX, positionY, fruit){
 	return positionX > fruit.x && positionX < fruit.x + fruit.width &&
 		   positionY > fruit.y && positionY < fruit.y + fruit.height
 }
 
-function createItems(counter = randomGenerator(0, 100)){
-	switch (counter) {
-		case 0:
-			const newApple = new GameItem(appleImage, 100);
-			newApple.loaded = true;
-			images.push(newApple);
-			break;
-		case 1:
-			const newBanana = new GameItem(bananaImage, 100);
-			newBanana.loaded = true;
-			images.push(newBanana);
-			break;
+function updateScore(item) {
+	if(item.score !== 'boom!!!'){
+		score += item.score;
+
+	}else {
+		alert(`You lose! Score: ${score}`);
+		location.reload();
 	}
 }
+
 
 
 
